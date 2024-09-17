@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="calculator">
+        <input id="display" readonly placeholder="0" >
+        <div id="bttns">
+            <button onclick="clearDisplay()" id="operationBtn">C</button>
+            <button onclick="pasteOnDisplay('(')" id="operationBtn">(</button>
+            <button onclick="pasteOnDisplay(')')" id="operationBtn">)</button>
+
+
+            <button onclick="pasteOnDisplay('/')" id="operationBtn">/</button>
+
+            <button onclick="pasteOnDisplay('7')" id="numBtn">7</button>
+            <button onclick="pasteOnDisplay('8')" id="numBtn">8</button>
+            <button onclick="pasteOnDisplay('9')" id="numBtn">9</button>
+
+
+            <button onclick="pasteOnDisplay('*')" id="operationBtn">*</button>
+
+            <button onclick="pasteOnDisplay('4')" id="numBtn">4</button>
+            <button onclick="pasteOnDisplay('5')" id="numBtn">5</button>
+            <button onclick="pasteOnDisplay('6')" id="numBtn">6</button>
+
+
+            <button onclick="pasteOnDisplay('-')" id="operationBtn">-</button>
+            
+            <button onclick="pasteOnDisplay('1')" id="numBtn">1</button>
+            <button onclick="pasteOnDisplay('2')" id="numBtn">2</button>
+            <button onclick="pasteOnDisplay('3')" id="numBtn">3</button>
+
+
+            <button onclick="pasteOnDisplay('+')" id="operationBtn">+</button>
+
+            <button onclick="pasteOnDisplay('.')" id="numBtn">.</button>
+            <button onclick="pasteOnDisplay('0')" id="numBtn">0</button>
+            <button onclick="backspace()" id="numBtn" style="font-size: 2rem;">⌫</button>
+
+
+            <button onclick="result()" id="equalBtn">=</button>
+
+
+        </div>
+        
+
+        
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>

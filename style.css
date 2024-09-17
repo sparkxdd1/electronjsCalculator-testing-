@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    max-width: 423px;
+    max-height: 713px;
+}
+#calculator {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(31,32,35,255);
+    max-width: 410px;
+    max-height: 100%;
+
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    font-size: 4rem;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 20px;
+    border: none;
+    background-color: rgb(31,32,35,255);
+    color: white;
+}
+
+#bttns {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 5px;
+    padding: 20px;
+    padding-top: 10px;
+
+    justify-content: center;
+}
+
+
+
+button {
+    width: 95px;
+    height: 95px;
+    border-radius: 5px;
+    border: none !important;
+    font-size: 3rem;
+    color: white !important;
+}
+#numBtn {
+    background-color: rgba(59,58,62,255) ;
+    &&:hover {
+        background-color: rgba(50,50,52,255)  ;
+    }
+}
+#operationBtn {
+    background-color: hsl(240, 2%, 18%) ;
+    &&:hover {
+        background-color: rgba(59,58,62,255) ;
+    }
+}
+
+#equalBtn {
+    background-color:rgba(166,165,161,255) ;
+
+    &&:hover {
+        background-color: rgb(144, 143, 142) ;
+    }
+}
+
+
+/* 
+
+rgba(31,32,35,255) bg color
+rgba(59,58,62,255) num button color
+rgba(50,50,52,255) operation button color
+rgba(166,165,161,255) equal button color
+*/
